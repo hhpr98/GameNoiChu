@@ -1974,7 +1974,7 @@ cầm canh
 cầm cập
 cầm chắc
 cầm chừng
-cầm cờ (cầm kỳ)
+cầm cờ
 cầm cự
 cầm đầu
 Cầm đuốc chơi đêm
@@ -2446,7 +2446,7 @@ chia lìa
 chia ly
 chìa khóa
 chích, đầm
-Chích Trợ (Núi)
+Chích Trợ
 chiếc bách
 chiếc bóng
 chiếc nha
@@ -2546,7 +2546,7 @@ Chiêu Vũ
 Chiêu Yên
 chiều chuộng
 chiều ý
-Chiếu Bạch (Núi)
+Chiếu Bạch
 chiếu chỉ
 chiếu cố
 chiếu khán
@@ -2648,7 +2648,7 @@ Chu Minh
 Chu Phan
 Chu Trinh
 Chu Túc
-chu tuyền (chu toàn)
+chu tuyền
 Chu Văn An
 Chu Văn An
 Chu Văn Tiếp
@@ -3136,7 +3136,7 @@ cửa sổ
 cửa thoi
 cửa trời
 cửa viên
-cửa Võ (Vũ môn)
+cửa Võ
 cựa trình
 cực điểm
 cực hình
@@ -3249,7 +3249,6 @@ danh viên
 danh vọng
 dành dành
 Dành phía tả
-Dao (dân tộc)
 Dao Áo Dài
 dao cạo
 Dao Cóc Mùn
@@ -3473,7 +3472,6 @@ dốt đặc
 dơ dáng
 dở hơi
 dớ dẩn
-Du (cửa bể)
 du côn
 du dương
 du đãng
@@ -3656,7 +3654,7 @@ dứt tình
 đám ma
 đạm bạc
 Đan Lai-Ly Hà
-Đan Thai (cửa bể)
+Đan Thai
 đan trì
 đàn áp
 đàn bà
@@ -3870,13 +3868,13 @@ dứt tình
 đình liệu
 Đình Trầm Hương
 đình tử
-Đình Xá (xã)
-Đình Xuyên (xã)
+Đình Xá
+Đình Xuyên
 đỉnh chung
 đỉnh chung
 Đỉnh Giáp non thần
 đính hôn
-Định An (xã)
+Định An
 định bụng
 định cư
 định hướng
@@ -5269,7 +5267,7 @@ hà bá
 hà châu
 Hà đồ Lạc thư
 hà hiếp
-Hà Hoa (Cửa bể)
+Hà Hoa
 hà khắc
 hà mã
 Hà Nhì
@@ -5424,7 +5422,7 @@ hãnh tiến
 hạnh kiểm
 hạnh ngộ
 Hạnh Ngươn
-Hạnh Ngươn (Hạnh Nguyên)
+Hạnh Ngươn
 hạnh phúc
 hao hụt
 hao mòn
@@ -5533,7 +5531,7 @@ hiểm độc
 hiểm họa
 hiểm nghèo
 Hiên kỳ
-hiên môn (hoặc viên môn)
+hiên môn
 hiên ngang
 hiền hòa
 hiền sĩ
@@ -6570,7 +6568,6 @@ inh tai
 Ka Beo
 ka ki
 ka li
-Kađai (tiếng)
 kè kè
 kè nhè
 kẻ cả
@@ -6616,7 +6613,6 @@ keo lận
 Keo loan
 keo loan
 keo sơn
-kèo (tiếng cổ)
 kèo cò
 kèo kẹo
 kèo nèo
@@ -6821,8 +6817,6 @@ khang kiện
 khang ninh
 khang trang
 khảng khái
-Kháng (dân tộc)
-Kháng (tiếng)
 Kháng Ái
 kháng án
 Kháng Bung
@@ -7347,10 +7341,9 @@ khổng tước
 khống cáo
 khống chế
 khống chỉ
-Khơ-me (dân tộc)
-Khơ-me Krôm
-Khơ-mú (dân tộc)
-Khơ-mú (tiếng)
+Khơ me
+Khơ me Krôm
+Khơ mú
 khờ dại
 khờ khạo
 khờ khĩnh
@@ -7375,7 +7368,6 @@ khởi thảo
 khởi thân
 khởi thủy
 khởi xướng
-Khơme (tiếng)
 khớp xương
 khu biệt
 khu trú
@@ -7564,7 +7556,7 @@ kiến hiệu
 kiến lập
 kiến lửa
 kiến nghị
-kiến nghĩa bất vi vô dũng dã.( Luận ngữ)
+kiến nghĩa bất vi vô dũng dã
 kiến quốc
 kiến tập
 kiến thiết
@@ -7669,8 +7661,6 @@ kín đáo
 kín miệng
 kín mít
 kín tiếng
-Kinh (dân tộc)
-Kinh (tiếng)
 kinh bang tế thế
 Kinh Châu
 kinh cụ
@@ -7785,7 +7775,7 @@ kỳ hình
 kỳ kèo
 kỳ khôi
 kỳ khu
-Kỳ La (cửa bể)
+Kỳ La
 kỳ lân
 kỳ mục
 kỳ mưu
@@ -7873,7 +7863,7 @@ Lã Bất Vi
 Lã Bất Vi
 lã chã
 Lã đường thi tập
-Lã Hậu (Lữ Hậu)
+Lã Hậu
 Lã Thượng
 Lã Vọng
 lá bài
@@ -9468,7 +9458,7 @@ lưỡng chiết
 lưỡng cực
 lưỡng diện
 lưỡng hợp
-Lưỡng Kiên (núi)
+Lưỡng Kiên
 lưỡng lự
 lưỡng nghi
 lưỡng phân
@@ -10161,7 +10151,7 @@ minh nguyệt
 minh nông
 minh oan
 minh quân
-minh sinh (minh tinh)
+minh sinh
 minh thệ
 minh tinh
 mình mẩy
@@ -14425,7 +14415,7 @@ Quang Húc
 Quang Huy
 Quang Hưng
 Quang Khải
-Quang Khánh (chùa)
+Quang Khánh
 Quang Kim
 Quang Lang
 Quang Lịch
@@ -15539,7 +15529,7 @@ sa sầm
 sa sẩy
 Sa Sơn
 sa sút
-Sa Tắc (cảng)
+Sa Tắc
 sa thạch
 sa thải
 Sa Thầy
@@ -15601,7 +15591,6 @@ Sài Hồ
 sài kinh
 sài lang
 Sài Sơn
-Sài Sơn (chùa)
 sãi chùa
 sãi đò
 sãi vãi
@@ -16145,7 +16134,7 @@ song loan
 Song Lộc
 song mã
 Song mai
-Song ngư (núi)
+Song ngư
 song phi
 song phi
 Song Phú
@@ -17802,10 +17791,10 @@ thả giọng
 thả lỏng
 thả mồi
 thả rong
-thác (tiếng cổ)
 Thác Bà
 Thác Mã
 Thác Mơ
+thác nước
 Thạc Gián
 Thạc Nam
 thạc sĩ
@@ -19032,7 +19021,7 @@ thiên vàn
 thiên văn
 thiên văn học
 thiên vị
-Thiên Vực (sông)
+Thiên Vực
 thiên vương tinh
 Thiên vương tinh
 thiền gia
@@ -19922,7 +19911,7 @@ Thủy thiên nhất sắc
 thủy thổ
 thủy thủ
 thủy tiên
-Thủy Tiên (đầm)
+Thủy Tiên
 thủy tinh
 Thuỷ tinh
 thủy tinh dịch
@@ -21868,7 +21857,7 @@ trấn ngự
 Trấn Ninh
 trấn phong
 trấn phục
-Trấn Quốc (chùa)
+Trấn Quốc
 trấn thủ
 trấn tĩnh
 trấn trạch
@@ -22621,7 +22610,7 @@ truyền bảo
 truyền cảm
 truyền đạo
 truyền đạt
-Truyền Đăng (núi)
+Truyền Đăng
 truyền đơn
 truyền giáo
 truyền hình
@@ -22774,7 +22763,7 @@ trường kỳ
 trường kỳ
 trường kỷ
 Trường Lạc
-Trường Lang (Cảng)
+Trường Lang
 Trường Lâm
 Trường Long
 Trường Long Hoà
@@ -22892,7 +22881,7 @@ tú các, lan phòng
 tú các hương khuê
 tú cầu
 Tú Đoạn
-tú khẩu cẩm tâm (miệng thêu, lòng gấm)
+tú khẩu cẩm tâm
 tú khí
 Tú Mịch
 Tú Nang
