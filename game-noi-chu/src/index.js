@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // css
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/index.css';
 
 ReactDOM.render(
   <React.StrictMode>
