@@ -36,8 +36,6 @@ export const PlayScreen = (props) => {
             const randomWord = Math.floor(Math.random() * answerLen);
             return botSearchFinal[randomWord];
         }
-
-        return "";
     }
 
     const onConfirmWord = () => {
