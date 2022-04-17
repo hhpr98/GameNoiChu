@@ -21,10 +21,21 @@ export const PlayScreen = (props) => {
         setUserInput(e.target.value);
     }
 
-    const onBotAction = () => {
+    const onBotAction = (txt) => {
         // if bot work, it is return data
         // if bot lose, it is return ""
-        // const botSearch = data.find()
+        const splitCurrentWord = txt.split(" "); // đồng âm => ["đồng", "âm"]
+        const keywordToSearch = splitCurrentWord[splitCurrentWord.length - 1].toLowerCase(); // "âm"
+        const botSearch = data.filter(item => item.includes(keywordToSearch)); // ["âm hưởng", "nhạc âm", "âm thanh", ...]
+        const reg = new RegExp("^(" + keywordToSearch + ".*)");
+        const botSearchFinal = botSearch.filter(item => reg.test(item)); // ["âm hưởng","âm thanh"]
+        const answerLen = botSearchFinal.length;
+        if (answerLen === 0) {
+            return "";
+        } else {
+            const randomWord = Math.floor(Math.random() * answerLen);
+            return botSearchFinal[randomWord];
+        }
 
         return "";
     }
@@ -49,7 +60,7 @@ export const PlayScreen = (props) => {
                     setPrevWord(userInput);
 
                     // get bot action
-                    const botResult = onBotAction();
+                    const botResult = onBotAction(userInput);
                     if (botResult === "") {
                         // bot lose
                         Swal.fire({
@@ -69,7 +80,9 @@ export const PlayScreen = (props) => {
                         //     }
                         // });
                     } else {
-
+                        setTurn(0);
+                        setPrevWord(botResult);
+                        setUserInput("");
                     }
                 }
             }
@@ -89,7 +102,7 @@ export const PlayScreen = (props) => {
             </div>
             <div className="row d-flex justify-content-center">
                 <div className="col-6">
-                    <input type="text" className="form-control" placeholder="từ nối" onChange={onUserInputChange} />
+                    <input type="text" className="form-control" placeholder="từ nối" onChange={onUserInputChange} value={userInput} />
                 </div>
                 <div className="col-3">
                     <button type="button" className="btn btn-outline-primary" onClick={onConfirmWord}>Xác nhận</button>
