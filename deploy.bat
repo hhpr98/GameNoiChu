@@ -14,6 +14,6 @@ call cd ..
 SET CURRENT_DIR=%~dp0
 SET REACT_BUILD_DIR=%CURRENT_DIR%game-noi-chu\build\
 SET FIREBASE_DIR=%CURRENT_DIR%public\
-call xcopy "%REACT_BUILD_DIR%" "%FIREBASE_DIR%" /Y
+call xcopy "%REACT_BUILD_DIR%" "%FIREBASE_DIR%" /Y /E
 ::Put your static files (e.g., HTML, CSS, JS) in your app’s deploy directory (the default is “public”).
 call firebase deploy
