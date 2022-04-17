@@ -8,7 +8,7 @@ export const StartPage = (props) => {
     let navigate = useNavigate();
 
     const onStartGameClick = () => {
-        let path = 'not-found';
+        let path = 'play';
         navigate(path);
     }
 
@@ -19,7 +19,7 @@ export const StartPage = (props) => {
                 className="start-button mt-5"
                 onClick={onStartGameClick}
             >
-                Get Started
+                <b>Get Started</b>
             </button>
         </div>
     );
