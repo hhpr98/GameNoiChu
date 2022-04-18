@@ -7,6 +7,8 @@ export const PlayScreen = (props) => {
     const [turn, setTurn] = useState(0); // 0 is player, 1 is bot
     const [prevWord, setPrevWord] = useState("");
     const [userInput, setUserInput] = useState("");
+    const [life, setlife] = useState(3);
+    const [correct, setCorrect] = useState(0);
 
     const data = dictionary.data;
     const navigate = useNavigate();
@@ -56,6 +58,7 @@ export const PlayScreen = (props) => {
                     // console.log("pass 3");
                     setTurn(1);
                     setPrevWord(userInput);
+                    setCorrect(correct + 1);
 
                     // get bot action
                     const botResult = onBotAction(userInput);
@@ -64,7 +67,7 @@ export const PlayScreen = (props) => {
                         Swal.fire({
                             icon: 'info',
                             title: 'Oops...',
-                            text: 'You win!',
+                            text: 'Tại hạ bái phục... Bạn đã thắng!',
                             confirmButtonText: 'Confirm'
                         }).then(() => {
                             navigate('/');
@@ -82,20 +85,34 @@ export const PlayScreen = (props) => {
                         setPrevWord(botResult);
                         setUserInput("");
                     }
+                    return;
                 }
             }
         }
+
+        // wrong answer
+        if (life === 1) {
+            Swal.fire({
+                icon: 'info',
+                title: 'Oops...',
+                text: `Bạn đã thua. Số câu đúng: ${correct}`,
+                confirmButtonText: 'Confirm'
+            }).then(() => {
+                navigate('/');
+            });
+        }
+        setlife(life - 1);
 
     }
 
     return (
         <div>
             <div className="row d-flex justify-content-center mb-3">
-                <div className="col-6">{turn === 0 ? "Máy" : "Bạn"} đã chọn : <b>{prevWord}</b></div>
+                <h5 className="col-6">{turn === 0 ? "Máy" : "Bạn"} đã chọn : <b>{prevWord}</b></h5>
                 <div className="col-3" />
             </div>
             <div className="row d-flex justify-content-center mb-3">
-                <div className="col-6">Lượt của {turn === 0 ? "bạn" : "máy"}</div>
+                <h5 className="col-6">Lượt của {turn === 0 ? "bạn" : "máy"}</h5>
                 <div className="col-3" />
             </div>
             <div className="row d-flex justify-content-center">
@@ -105,6 +122,20 @@ export const PlayScreen = (props) => {
                 <div className="col-3">
                     <button type="button" className="btn btn-outline-primary" onClick={onConfirmWord}>Xác nhận</button>
                 </div>
+            </div>
+            <div className="row d-flex justify-content-center mt-4">
+                <div className="col-6 d-flex flex-row">
+                    <div className="col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">Lượt còn lại:&emsp;</div>
+                    <div className="text-danger"><b>{life}</b></div>
+                </div>
+                <div className="col-3" />
+            </div>
+            <div className="row d-flex justify-content-center mt-1">
+                <div className="col-6 d-flex flex-row">
+                    <div className="col-8 col-sm-7 col-md-6 col-lg-4 col-xl-3">Số câu đúng:&emsp;</div>
+                    <div className="text-danger"><b>{correct}</b></div>
+                </div>
+                <div className="col-3" />
             </div>
         </div>
     )
