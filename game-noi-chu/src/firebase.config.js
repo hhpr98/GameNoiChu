@@ -14,8 +14,8 @@ const firebaseConfig = {
   projectId: "game-noi-chu-nhh",
   storageBucket: "game-noi-chu-nhh.appspot.com",
   messagingSenderId: "37502804667",
-  appId: "1:37502804667:web:ec3d1374d9438aaa76bf9e",
-  measurementId: "G-NFH6X55L6M"
+  appId: "1:37502804667:web:bdb4a703929d44fe76bf9e",
+  measurementId: "G-W9BNTD4CBK"
 };
 
 // Initialize Firebase
@@ -23,6 +23,6 @@ const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
 // get db
-const db = getFirestore(app)
+const db = getFirestore(app);
 
-export {db}
+export { db };
