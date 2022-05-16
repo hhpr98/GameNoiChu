@@ -1,9 +1,9 @@
-import { useNavigate } from "react-router-dom";
-// import { db } from "../../firebase.config";
-// import { collection, getDocs, addDoc } from "firebase/firestore";
-import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+// import { db } from '../../firebase.config';
+// import { collection, getDocs, addDoc } from 'firebase/firestore';
+import { useEffect } from 'react';
 // css
-import "../../css/startPage.css";
+import '../../css/startPage.css';
 
 export const StartPage = (props) => {
 
@@ -12,23 +12,23 @@ export const StartPage = (props) => {
         // https://firebase.google.com/docs/firestore/quickstart
 
         // const testGetData = async () => {
-        //     const querySnapshot = await getDocs(collection(db, "dictionaries"));
+        //     const querySnapshot = await getDocs(collection(db, 'dictionaries'));
         //     querySnapshot.forEach((doc) => {
-        //         console.log(`${doc.id} => ${doc.data()["word"]} createdAt ${doc.data()["createdAt"]}`);
+        //         console.log(`${doc.id} => ${doc.data()['word']} createdAt ${doc.data()['createdAt']}`);
         //     });
         // }
         // testGetData();
 
         // const testAddData = async () => {
         //     try {
-        //         const docRef = await addDoc(collection(db, "dictionaries"), {
-        //             first: "Ada",
-        //             last: "Lovelace",
+        //         const docRef = await addDoc(collection(db, 'dictionaries'), {
+        //             first: 'Ada',
+        //             last: 'Lovelace',
         //             born: 1815
         //         });
-        //         console.log("Document written with ID: ", docRef.id);
+        //         console.log('Document written with ID: ', docRef.id);
         //     } catch (e) {
-        //         console.error("Error adding document: ", e);
+        //         console.error('Error adding document: ', e);
         //     }
         // }
         // testAddData();
@@ -40,7 +40,7 @@ export const StartPage = (props) => {
     let navigate = useNavigate();
 
     const onStartGameClick = () => {
-        let path = "play";
+        let path = 'play';
         navigate(path);
     }
 

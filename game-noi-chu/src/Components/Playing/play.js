@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import dictionary from '../../data/v1.0.1.json';
+import { db } from '../../firebase.config';
+import { collection, addDoc } from 'firebase/firestore';
+import moment from 'moment';
 
 export const PlayScreen = (props) => {
     const [turn, setTurn] = useState(0); // 0 is player, 1 is bot
@@ -21,6 +24,21 @@ export const PlayScreen = (props) => {
 
     const onUserInputChange = (e) => {
         setUserInput(e.target.value);
+    }
+
+    const addGamePlayResult = async (total, botAnswer, userAnswer, status) => {
+        try {
+            const docRef = await addDoc(collection(db, 'game-play'), {
+                total: total,
+                botFinalWord: botAnswer,
+                userFinalWord: userAnswer,
+                status: status,
+                createdAt: Math.floor(moment().valueOf() / 1000),
+            });
+            console.log('Added game play history: ', docRef.id);
+        } catch (e) {
+            console.error('Error adding game play history: ', e);
+        }
     }
 
     const onBotAction = (txt) => {
@@ -70,6 +88,8 @@ export const PlayScreen = (props) => {
                             text: 'Tại hạ bái phục... Bạn đã thắng!',
                             confirmButtonText: 'Confirm'
                         }).then(() => {
+                            addGamePlayResult(correct, prevWord, userInput, "user-win");
+                        }).then(() => {
                             navigate('/');
                         });
                         // .then((result) => {
@@ -97,6 +117,8 @@ export const PlayScreen = (props) => {
                 title: 'Oops...',
                 text: `Bạn đã thua. Số câu đúng: ${correct}`,
                 confirmButtonText: 'Confirm'
+            }).then(() => {
+                addGamePlayResult(correct, prevWord, userInput, "bot-win");
             }).then(() => {
                 navigate('/');
             });
