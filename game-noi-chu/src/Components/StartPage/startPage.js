@@ -1,24 +1,40 @@
 import { useNavigate } from "react-router-dom";
+// import { db } from "../../firebase.config";
+// import { collection, getDocs, addDoc } from "firebase/firestore";
+import { useEffect, useState } from "react";
 // css
 import "../../css/startPage.css";
-import { db } from "../../firebase.config";
-import { collection, onSnapshot } from "firebase/firestore";
-import { useEffect, useState } from "react";
 
 export const StartPage = (props) => {
 
-    const [dictionaries, setDitionaries] = useState(null);
-
     useEffect(() => {
-        onSnapshot(collection(db, "dictionaries"), (snapshot) => {
-            setDitionaries(snapshot.docs);
-        });
+
+        // https://firebase.google.com/docs/firestore/quickstart
+
+        // const testGetData = async () => {
+        //     const querySnapshot = await getDocs(collection(db, "dictionaries"));
+        //     querySnapshot.forEach((doc) => {
+        //         console.log(`${doc.id} => ${doc.data()["word"]} createdAt ${doc.data()["createdAt"]}`);
+        //     });
+        // }
+        // testGetData();
+
+        // const testAddData = async () => {
+        //     try {
+        //         const docRef = await addDoc(collection(db, "dictionaries"), {
+        //             first: "Ada",
+        //             last: "Lovelace",
+        //             born: 1815
+        //         });
+        //         console.log("Document written with ID: ", docRef.id);
+        //     } catch (e) {
+        //         console.error("Error adding document: ", e);
+        //     }
+        // }
+        // testAddData();
     }, []);
 
-    if (dictionaries)
-    {
-        console.log(dictionaries.map(item => item.data()));
-    }
+
 
     // React Router V6
     let navigate = useNavigate();
